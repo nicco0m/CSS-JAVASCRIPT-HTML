@@ -1,0 +1,235 @@
+/* Configurações gerais da página */
+body {
+    margin: 0;
+    background-color: #e9e2f0;
+    color: #39313f;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+/* Caixa principal da página */
+.borda {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #665078;
+    position: relative;
+}
+
+/* Título principal */
+#titulo {
+    color: #9b477c;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #ded0e5;
+}
+
+/* Texto de introdução */
+.introducao {
+    color: #665078;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Títulos e subtítulos */
+h1, h2, h3 {
+    color: #75466f;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+
+/* Títulos das seções */
+h2 {
+    border-bottom: 2px solid #c7a6d3;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+/* Subtítulos */
+h3 {
+    font-size: 24px;
+}
+
+/* Menu de navegação */
+nav {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eee5f2;
+    border: 2px solid #c7a6d3;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Links do menu */
+nav a {
+    color: #75466f;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Efeito ao passar o mouse nos links */
+nav a:hover {
+    color: #bd629d;
+    text-decoration: underline;
+}
+
+/* Seções de conteúdo */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ded0e5;
+    position: relative;
+}
+
+/* Figuras */
+figure {
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #a88bb5;
+    position: static;
+}
+
+/* Imagens */
+figure img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #c7a6d3;
+}
+
+/* Legendas das imagens */
+figcaption {
+    margin-top: 10px;
+    color: #75466f;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Listas */
+.lista {
+    padding-left: 30px;
+    line-height: 1.8;
+    list-style-type: square;
+}
+
+/* Espaçamento dos itens das listas */
+li {
+    margin-bottom: 10px;
+}
+
+/* Cor dos marcadores das listas */
+li::marker {
+    color: #9b477c;
+}
+
+/* Palavras em negrito */
+strong {
+    color: #9b477c;
+    font-weight: bold;
+}
+
+/* Textos em itálico */
+em {
+    color: #75466f;
+    font-style: italic;
+}
+
+/* Caixa de aviso */
+#aviso {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5eaf3;
+    border: 2px dashed #b77da9;
+    position: relative;
+    top: 5px;
+}
+
+/* Título da caixa de aviso */
+#aviso h2 {
+    color: #9b477c;
+}
+
+/* Centralização usando Flexbox */
+.centralizado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão para acessar outra página */
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #75466f;
+    color: white;
+    border: 2px solid #75466f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao:hover {
+    background-color: #9b477c;
+    border-color: #9b477c;
+    text-decoration: underline;
+}
+
+/* Rodapé da página */
+footer {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #eee5f2;
+    border-top: 3px solid #a88bb5;
+    text-align: center;
+    position: relative;
+}
+
+/* Links do rodapé */
+footer a {
+    color: #75466f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse nos links do rodapé */
+footer a:hover {
+    color: #bd629d;
+    text-decoration: underline;
+}
+
+/* Posicionamento absoluto */
+.absoluto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+
+/* Posicionamento fixo */
+.fixo {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px;
+    background-color: #75466f;
+    color: white;
+    border: 2px solid #c7a6d3;
+    z-index: 3;
+}

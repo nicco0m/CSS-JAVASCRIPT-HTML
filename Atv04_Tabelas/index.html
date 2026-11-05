@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML e CSS - Tabelas</title>
+
+    <style>
+        body {
+            background-color: #f6edff;
+        }
+
+        .tabela1, .tabela1 th, .tabela1 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .tabela2 {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            background-color: rgb(240, 225, 209);
+        }
+
+        .tabela2 caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px;
+            color: #805cb9;
+        }
+
+        .tabela2 th, .tabela2 td {
+            border: 1px dotted #474747;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .tabela2 th {
+            background-color: #442b6d;
+            color: white;
+        }
+
+        .tabela2 td {
+            color: #000000;
+        }
+
+        .tabela2 tbody tr:nth-child(even) {
+            background-color: #c1a9e9;
+        }
+
+        .tabela2 tbody tr:nth-child(odd) {
+            background-color: #FFFFFF;
+        }
+
+        .tabela2 tbody th {
+            background-color: #805cb9;
+            color: rgb(246, 224, 253);
+            width: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table class="tabela1">
+
+        <caption>Trajetória Acadêmica e Profissional</caption>
+
+        <tr>
+            <th rowspan="2" width="30%">Estudante</th>
+            <th colspan="2">Formação</th>
+            <th rowspan="2">Ano de conclusão</th>
+        </tr>
+
+        <tr>
+            <th>Graduação</th>
+            <th>Pós Graduação</th>
+        </tr>
+
+        <tr>
+            <th>José</th>
+            <td>Ciências da Computação</td>
+            <td>Inteligência Artificial</td>
+            <td>2023</td>
+        </tr>
+
+        <tr>
+            <th>Ana</th>
+            <td>Engenharia de Software</td>
+            <td>Gestão de Projetos</td>
+            <td>2022</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <table class="tabela2">
+
+        <caption>Minha Rotina Semanal</caption>
+
+        <tr>
+                <th rowspan="2">Período</th>
+                <th colspan="7">Dias da Semana</th>
+        </tr>
+
+        <tr>
+            <th>DOM</th>
+            <th>SEG</th>
+            <th>TER</th>
+            <th>QUA</th>
+            <th>QUI</th>
+            <th>SEX</th>
+            <th>SAB</th>
+        </tr>
+
+        <tr>
+            <th>08h às 13h</th>
+            <td>Descanso</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+        </tr>
+
+        <tr>
+            <th>13h às 14h</th>
+            <td>Almoço</td>
+            <td>Almoço</td>
+            <td>Almoço</td>
+            <td>Almoço</td>
+            <td>Almoço</td>
+            <td>Almoço</td>
+            <td>Indo para casa + almoço</td>
+        </tr>
+
+        <tr>
+            <th>14h às 17h</th>
+            <td>Lazer</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Trabalho</td>
+            <td>Lazer</td>
+        </tr>
+
+        <tr>
+            <th>17h30min às 19h</th>
+            <td>Lazer</td>
+            <td>Indo para faculdade + descanso</td>
+            <td>Indo para faculdade + descanso</td>
+            <td>Indo para faculdade + descanso</td>
+            <td>Indo para faculdade + descanso</td>
+            <td>Indo para casa + descanso</td>
+            <td>Lazer</td>
+        </tr>
+
+        <tr>
+            <th>19h às 22h15min</th>
+            <td>Lazer</td>
+            <td>Aula</td>
+            <td>Aula</td>
+            <td>Aula</td>
+            <td>Aula</td>
+            <td>Aula</td>
+            <td>Lazer</td>
+        </tr>
+    </table>
+</body>
+</html>
